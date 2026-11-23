@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Ibtisam Sheikh — Gifted by Awais Azam</title>
+    <!-- Tailwind CSS CDN for responsive utility styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Luxury Fonts: Cormorant Garamond, Great Vibes, Cinzel, and Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Base Luxury Midnight-Plum & Champagne Theme */
+        :root {
+            --velvet-bg-1: #190D18;
+            --velvet-bg-2: #2C1428;
+            --velvet-bg-3: #130912;
+            --rose-gold: #E899A8;
+            --rose-gold-deep: #B85D72;
+            --champagne: #F4D086;
+            --champagne-deep: #C99842;
+            --ivory-card: rgba(255, 250, 251, 0.94);
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: radial-gradient(circle at 20% 15%, #3B1933 0%, var(--velvet-bg-1) 48%, var(--velvet-bg-3) 100%);
+            color: #2D1A21;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Subtle Ambient Champagne & Rose-Gold Glow Orbs */
+        body::before,
+        body::after {
+            content: '';
+            position: fixed;
+            border-radius: 9999px;
+            pointer-events: none;
+            z-index: 0;
+            filter: blur(80px);
+            opacity: 0.28;
+        }
+
+        body::before {
+            width: 320px;
+            height: 320px;
+            top: -80px;
+            left: -80px;
+            background: radial-gradient(circle, var(--rose-gold), transparent 70%);
+        }
+
+        body::after {
+            width: 360px;
+            height: 360px;
+            bottom: -100px;
+            right: -90px;
+            background: radial-gradient(circle, var(--champagne), transparent 70%);
+        }
+
+        .font-serif-luxury {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .font-calligraphy {
+            font-family: 'Great Vibes', cursive;
+        }
+
+        .font-royal {
+            font-family: 'Cinzel', serif;
+        }
+
+        /* Luxury Glass Card Surface */
+        .luxury-glass {
+            background: var(--ivory-card);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1.5px solid rgba(244, 208, 134, 0.55);
+            box-shadow:
+                0 24px 60px rgba(0, 0, 0, 0.45),
+                0 0 0 1px rgba(255, 255, 255, 0.65) inset;
+        }
+
+        /* Royal Gradient Button */
+        .btn-royal {
+            background: linear-gradient(135deg, #C86D82 0%, #9E4758 55%, #7C3042 100%);
+            color: #FFFDFB;
+            box-shadow: 0 10px 24px rgba(158, 71, 88, 0.42), 0 0 0 1px rgba(244, 208, 134, 0.45) inset;
+            transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
+        }
+
+        .btn-royal:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 30px rgba(158, 71, 88, 0.55), 0 0 0 1px rgba(244, 208, 134, 0.7) inset;
+            filter: brightness(1.04);
+        }
+
+        .btn-royal:active {
+            transform: scale(0.98);
+        }
+
+        /* Floating & Royal Glow Animations */
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+        }
+
+        .animate-float {
+            animation: floatSlow 3.4s ease-in-out infinite;
+        }
+
+        .royal-glow {
+            box-shadow: 0 0 32px rgba(232, 153, 168, 0.42), 0 0 18px rgba(244, 208, 134, 0.28);
+        }
+
+        /* Gentle Wobble & Pulse for Side Developer WhatsApp Icon */
+        @keyframes whatsappWobble {
+            0%, 100% { transform: rotate(0deg) scale(1); }
+            12% { transform: rotate(-10deg) scale(1.05); }
+            24% { transform: rotate(9deg) scale(1.05); }
+            36% { transform: rotate(-6deg) scale(1.02); }
+            48% { transform: rotate(4deg) scale(1); }
+            60% { transform: rotate(0deg) scale(1); }
+        }
+
+        @keyframes pulseRing {
+            0% { transform: scale(0.95); opacity: 0.72; }
+            75% { transform: scale(1.42); opacity: 0; }
+            100% { transform: scale(1.42); opacity: 0; }
+        }
+
+        .whatsapp-float-btn {
+            animation: whatsappWobble 3.2s ease-in-out infinite;
+        }
+
+        .whatsapp-pulse-ring {
+            animation: pulseRing 2.2s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+        }
+
+        /* Step Transition Visibility */
+        .step-section {
+            display: none;
+            animation: fadeSlideUp 0.48s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+
+        .step-section.active {
+            display: flex;
+        }
+
+        @keyframes fadeSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(18px) scale(0.985);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Capsule Machine & Pop Animation */
+        @keyframes capsuleDrop {
+            0% { transform: translateY(-28px) scale(0.7) rotate(-18deg); opacity: 0; }
+            60% { transform: translateY(4px) scale(1.05) rotate(6deg); opacity: 1; }
+            100% { transform: translateY(0) scale(1) rotate(0deg); opacity: 1; }
+        }
+
+        .capsule-reveal {
+            animation: capsuleDrop 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        .lever-pull {
+            transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .lever-pull:active {
+            transform: rotate(24deg) scale(0.96);
+        }
+
+        /* Candle Flame Flicker & Extinguish */
+        @keyframes flameFlicker {
+            0%, 100% { transform: scaleY(1) rotate(-1.5deg); opacity: 1; }
+            50% { transform: scaleY(1.1) rotate(2deg); opacity: 0.92; }
+        }
+
+        .flame {
+            transform-origin: center bottom;
+            animation: flameFlicker 0.65s ease-in-out infinite;
+            transition: opacity 0.35s ease, transform 0.35s ease;
+        }
+
+        .flame.extinguished {
+            opacity: 0 !important;
+            transform: scale(0.1) translateY(-6px);
+            animation: none;
+        }
+
+        /* Rising Smoke Puff after Blowing Candle */
+        @keyframes smokeRise {
+            0% { transform: translate(-50%, 0) scale(0.5); opacity: 0.75; }
+            100% { transform: translate(-50%, -46px) scale(1.8); opacity: 0; }
+        }
+
+        .smoke-puff {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            border-radius: 9999px;
+            background: rgba(255, 255, 255, 0.85);
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+            animation: smokeRise 1.35s ease-out forwards;
+        }
+
+        /* Balloon Bobbing & Pop State */
+        @keyframes balloonBob {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-6px); }
+        }
+
+        .wish-balloon {
+            animation: balloonBob 2.8s ease-in-out infinite;
+            transition: transform 0.25s ease, opacity 0.3s ease, background 0.3s ease;
+        }
+
+        .wish-balloon.popped {
+            animation: none;
+            background: linear-gradient(135deg, #FFFDF9, #FFF3E0) !important;
+            border-color: #E8B86D !important;
+            transform: scale(0.98);
+        }
+
+        /* Custom Scrollbar for Letter */
+        .custom-scroll::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .custom-scroll::-webkit-scrollbar-track {
+            background: rgba(158, 71, 88, 0.08);
+            border-radius: 10px;
+        }
+
+        .custom-scroll::-webkit-scrollbar-thumb {
+            background: rgba(158, 71, 88, 0.45);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="relative flex flex-col items-center justify-between min-h-screen p-3.5 sm:p-6">
+
+    <!-- Fullscreen Celebration Canvas (Sparkles, Confetti & Fireworks) -->
+    <canvas id="celebrationCanvas" class="fixed inset-0 w-full h-full pointer-events-none z-40"></canvas>
+
+    <!-- Floating Side Animated Developer WhatsApp Icon Button (Fixed Bottom-Right -> Developer +923366931761) -->
+    <a id="floatingDeveloperWhatsappBtn"
+       href="https://wa.me/923366931761?text=Assalam-o-Alaikum!%20I%20saw%20the%20amazing%20Birthday%20Surprise%20website%20you%20created%20for%20Ibtisam%20Sheikh.%20I%20would%20love%20to%20get%20a%20custom%20website%20built%20too!%20%E2%9C%A8"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Chat with Developer on WhatsApp"
+       class="fixed bottom-4 right-4 sm:bottom-7 sm:right-7 z-50 group flex items-center space-x-2 focus:outline-none">
+        <!-- Developer Label Pill -->
+        <span class="inline-flex items-center space-x-1 bg-white/95 backdrop-blur-md text-[#1E5631] text-[11px] sm:text-xs font-bold px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-full shadow-lg border border-[#25D366]/35 transition-all duration-300 group-hover:scale-105">
+            <span>💻</span>
+            <span>Chat with Developer</span>
+        </span>
+
+        <!-- Animated Wobbling WhatsApp Circle Icon -->
+        <div class="relative flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-tr from-[#1EBE5D] to-[#25D366] text-white shadow-[0_10px_28px_rgba(37,211,102,0.52)] border-2 border-white whatsapp-float-btn">
+            <span class="absolute inset-0 rounded-full bg-[#25D366] whatsapp-pulse-ring -z-10"></span>
+            <svg class="w-6 h-6 sm:w-7 sm:h-7 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.004 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.256.59 4.46 1.71 6.404L3.2 28.8l6.564-1.72a12.74 12.74 0 0 0 6.24 1.62h.006c7.058 0 12.794-5.74 12.794-12.8 0-3.42-1.332-6.636-3.75-9.054A12.715 12.715 0 0 0 16.004 3.2zm0 23.34h-.004a10.6 10.6 0 0 1-5.404-1.48l-.388-.23-3.896 1.022 1.04-3.798-.252-.402a10.575 10.575 0 0 1-1.624-5.652c0-5.856 4.764-10.62 10.624-10.62 2.836 0 5.502 1.106 7.506 3.112a10.553 10.553 0 0 1 3.11 7.512c0 5.858-4.766 10.62-10.616 10.62zm5.826-7.954c-.32-.16-1.89-.932-2.182-1.038-.292-.106-.506-.16-.718.16-.214.32-.826 1.038-1.012 1.252-.186.212-.372.24-.692.08-.32-.16-1.35-.498-2.572-1.588-.95-.848-1.592-1.896-1.778-2.216-.186-.32-.02-.492.14-.652.144-.144.32-.372.48-.558.16-.186.212-.32.32-.532.106-.214.052-.4-.028-.56-.08-.16-.718-1.732-.984-2.372-.26-.622-.524-.538-.718-.548l-.612-.01c-.214 0-.56.08-.852.4-.292.32-1.118 1.092-1.118 2.664s1.144 3.09 1.304 3.304c.16.212 2.252 3.438 5.456 4.822.762.328 1.356.526 1.82.672.766.244 1.462.21 2.012.128.614-.092 1.89-.772 2.156-1.518.266-.746.266-1.384.186-1.518-.08-.134-.292-.214-.612-.374z"/>
+            </svg>
+        </div>
+    </a>
+
+    <!-- Top Header: 7-Step Progress Bar & Synthesized Music Toggle -->
+    <header class="w-full max-w-2xl flex items-center justify-between gap-2 z-20 pt-1 pb-3">
+        <!-- 7-Step Progress Indicator -->
+        <div id="progressBarContainer" class="flex items-center space-x-1 sm:space-x-1.5 bg-white/90 backdrop-blur-md px-3 py-2 rounded-full border border-white/95 shadow-md">
+            <span id="dot-1" class="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#9E4758] transition-all duration-300"></span>
+            <span id="dot-2" class="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#D98292]/35 transition-all duration-300"></span>
+            <span id="dot-3" class="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#D98292]/35 transition-all duration-300"></span>
+            <span id="dot-4" class="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#D98292]/35 transition-all duration-300"></span>
+            <span id="dot-5" class="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#D98292]/35 transition-all duration-300"></span>
+            <span id="dot-6" class="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#D98292]/35 transition-all duration-300"></span>
+            <span id="dot-7" class="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#D98292]/35 transition-all duration-300"></span>
+            <span id="stepLabel" class="text-[11px] sm:text-xs font-semibold text-[#6D434E] pl-1.5 whitespace-nowrap">1 / 7</span>
+        </div>
+
+        <!-- Synthesized Music Box Toggle -->
+        <button id="audioToggleBtn" aria-label="Toggle Birthday Music" class="flex items-center space-x-1.5 bg-white/90 hover:bg-white backdrop-blur-md px-3.5 py-2 rounded-full border border-white/95 shadow-md text-xs font-semibold text-[#6D434E] transition active:scale-95 cursor-pointer shrink-0">
+            <span id="audioIcon" class="text-sm">🔇</span>
+            <span id="audioText">Play Music</span>
+        </button>
+    </header>
+
+    <!-- Main 7-Step Interactive Experience Container -->
+    <main class="w-full max-w-xl my-auto z-10 flex flex-col items-center justify-center pb-16 sm:pb-10">
+
+        <!-- =========================================================
+             STEP 1: VIP BIRTHDAY PASS & MYSTERY GIFT BOX
+        ========================================================= -->
+        <section id="step-1" class="step-section active w-full flex-col items-center text-center">
+            <div class="luxury-glass w-full rounded-3xl p-6 sm:p-10 relative overflow-hidden">
+                <!-- Royal Curator Badge -->
+                <div class="inline-flex items-center space-x-1.5 bg-gradient-to-r from-[#FFF0D6] to-[#FFE5EC] text-[#9E4758] text-[11px] sm:text-xs font-bold tracking-wider uppercase px-4 py-1.5 rounded-full mb-4 border border-[#E8B86D]/55 shadow-xs">
+                    <span>👑 Exclusive Gift From Awais Azam 👑</span>
+                </div>
+
+                <h1 class="font-serif-luxury text-3xl sm:text-4xl md:text-5xl font-bold text-[#3B262C] leading-tight mb-1">
+                    Happy Birthday,
+                </h1>
+                <p class="font-calligraphy text-5xl sm:text-6xl text-[#9E4758] font-bold mb-2 drop-shadow-xs">
+                    Ibtisam Sheikh
+                </p>
+                <p class="text-xs font-semibold text-[#B88128] tracking-wide mb-4">
+                    ✨ Janamdin Mubarak Mere Bhai • A Special Tribute ✨
+                </p>
+
+                <!-- VIP Golden Pass Strip -->
+                <div class="max-w-sm mx-auto bg-gradient-to-r from-[#FFFDF9] via-[#FFF6EA] to-[#FFFDF9] border border-[#E8B86D]/75 rounded-2xl p-3.5 mb-5 shadow-xs flex items-center justify-between text-left">
+                    <div>
+                        <p class="text-[10px] uppercase tracking-widest text-[#B88128] font-bold">VIP Birthday Pass • Today's Legend</p>
+                        <p class="text-xs sm:text-sm font-bold text-[#3B262C]">For: Ibtisam Sheikh</p>
+                        <p class="text-[11px] text-[#7A535D]">Gifted by Best Friend: <span class="font-semibold text-[#9E4758]">Awais Azam</span></p>
+                    </div>
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-[#F4D086] to-[#D4A359] flex items-center justify-center text-white font-royal font-bold text-sm shadow-sm shrink-0">
+                        VIP
+                    </div>
+                </div>
+
+                <!-- Interactive Shimmering Mystery Gift Box -->
+                <div class="my-4 flex justify-center">
+                    <button id="openGiftBtn" class="group relative w-36 h-36 sm:w-40 sm:h-40 rounded-3xl bg-gradient-to-br from-[#FFF2F5] to-[#FFD9E2] border-2 border-white flex flex-col items-center justify-center royal-glow animate-float cursor-pointer focus:outline-none">
+                        <svg class="w-22 h-22 sm:w-24 sm:h-24 transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-3" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="60" cy="108" rx="38" ry="6" fill="#9E4758" fill-opacity="0.22"/>
+                            <rect x="24" y="52" width="72" height="52" rx="8" fill="url(#boxGrad1)"/>
+                            <rect x="53" y="52" width="14" height="52" fill="#E8B86D"/>
+                            <rect x="18" y="38" width="84" height="18" rx="6" fill="url(#lidGrad1)"/>
+                            <rect x="53" y="38" width="14" height="18" fill="#F4D086"/>
+                            <path d="M58 38C45 20 26 24 32 36C36 42 52 39 58 38Z" fill="#E8B86D"/>
+                            <path d="M62 38C75 20 94 24 88 36C84 42 68 39 62 38Z" fill="#F4D086"/>
+                            <circle cx="60" cy="37" r="6" fill="#C88A4B"/>
+                            <path d="M98 18L100 24L106 26L100 28L98 34L96 28L90 26L96 24L98 18Z" fill="#E8B86D"/>
+                            <path d="M22 14L23.5 18.5L28 20L23.5 21.5L22 26L20.5 21.5L16 20L20.5 18.5L22 14Z" fill="#9E4758"/>
+                            <defs>
+                                <linearGradient id="boxGrad1" x1="24" y1="52" x2="96" y2="104" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E5989B"/>
+                                    <stop offset="1" stop-color="#9E4758"/>
+                                </linearGradient>
+                                <linearGradient id="lidGrad1" x1="18" y1="38" x2="102" y2="56" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#F2AEB1"/>
+                                    <stop offset="1" stop-color="#B56576"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="mt-1 text-[11px] font-bold text-[#9E4758] tracking-wider uppercase">Tap to Unwrap</span>
+                    </button>
+                </div>
+
+                <p class="text-xs sm:text-sm text-[#6D5158] max-w-md mx-auto mb-6 leading-relaxed">
+                    Your best friend <strong class="text-[#9E4758]">Awais Azam</strong> crafted a one-time 7-stage surprise journey exclusively for you today. Step inside!
+                </p>
+
+                <button id="startJourneyBtn" class="btn-royal w-full sm:w-auto px-8 py-4 rounded-2xl font-semibold text-sm sm:text-base tracking-wide inline-flex items-center justify-center space-x-2 cursor-pointer">
+                    <span>Open Your Birthday Surprise</span>
+                    <span>🎁</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             STEP 2: INTERACTIVE GOLDEN SCRATCH-OFF CARD
+        ========================================================= -->
+        <section id="step-2" class="step-section w-full flex-col items-center text-center">
+            <div class="luxury-glass w-full rounded-3xl p-6 sm:p-9 relative">
+                <span class="inline-block bg-[#FFF0D6] text-[#B88128] text-xs font-bold px-3.5 py-1 rounded-full mb-3 border border-[#F5DCAA]">
+                    ✨ Golden Friendship Scratch Card ✨
+                </span>
+
+                <h2 class="font-serif-luxury text-2xl sm:text-4xl font-bold text-[#3B262C] mb-2">
+                    Scratch to Reveal Secret Note 🪙
+                </h2>
+                <p id="scratchPrompt" class="text-xs sm:text-sm text-[#6D5158] mb-5">
+                    Use your finger or mouse to scratch off the shimmering gold foil below!
+                </p>
+
+                <!-- Scratch Card Container -->
+                <div id="scratchWrapper" class="relative w-full max-w-md h-48 sm:h-52 mx-auto rounded-2xl overflow-hidden shadow-lg border-2 border-[#E8B86D] bg-gradient-to-br from-[#FFFDF9] via-[#FFF3F6] to-[#FFF6E5] flex flex-col items-center justify-center p-5">
+                    <div class="text-center select-none">
+                        <span class="text-2xl mb-1 block">🤝✨</span>
+                        <p class="font-serif-luxury text-lg sm:text-xl font-bold text-[#9E4758] mb-1.5">
+                            “True Brothers Aren’t Always Blood!”
+                        </p>
+                        <p class="text-xs sm:text-sm text-[#553D43] leading-relaxed">
+                            Ibtisam Sheikh, having a best friend like you is one of life’s greatest blessings. Stay legendary always!
+                        </p>
+                        <p class="text-[11px] font-bold text-[#B88128] mt-2 uppercase tracking-wider">
+                            — Your Best Friend, Awais Azam
+                        </p>
+                    </div>
+
+                    <canvas id="scratchCanvas" class="absolute inset-0 w-full h-full z-10 rounded-xl touch-none"></canvas>
+                </div>
+
+                <!-- Scratch Progress Bar -->
+                <div class="max-w-xs mx-auto mt-4">
+                    <div class="w-full h-2 bg-[#F5DCE2] rounded-full overflow-hidden">
+                        <div id="scratchProgressBar" class="h-full bg-gradient-to-r from-[#D4A359] to-[#9E4758] w-0 transition-all duration-200"></div>
+                    </div>
+                    <p id="scratchPercentText" class="text-[11px] text-[#7A535D] mt-1 font-medium">Scratched: 0%</p>
+                </div>
+
+                <div class="mt-5">
+                    <button id="toStep3Btn" class="hidden btn-royal w-full sm:w-auto px-8 py-3.5 rounded-2xl font-semibold text-sm sm:text-base items-center justify-center space-x-2 cursor-pointer">
+                        <span>Unlock Capsule Surprise 🔮</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             STEP 3: GOLDEN FRIENDSHIP CAPSULE DISPENSER
+        ========================================================= -->
+        <section id="step-3" class="step-section w-full flex-col items-center text-center">
+            <div class="luxury-glass w-full rounded-3xl p-6 sm:p-9 relative">
+                <span class="inline-block bg-[#FFE5EC] text-[#9E4758] text-xs font-bold px-3.5 py-1 rounded-full mb-3 border border-[#FFC2D1]">
+                    🔮 Golden Friendship Capsule Machine 🔮
+                </span>
+
+                <h2 class="font-serif-luxury text-2xl sm:text-4xl font-bold text-[#3B262C] mb-1.5">
+                    Spin & Crack 3 Surprise Capsules!
+                </h2>
+                <p id="capsuleInstruction" class="text-xs sm:text-sm text-[#6D5158] mb-5">
+                    Tap the golden lever below to dispense 3 secret friendship & birthday capsules from Awais Azam!
+                </p>
+
+                <!-- Interactive Luxury Capsule Dispenser Machine -->
+                <div class="max-w-sm mx-auto bg-gradient-to-b from-[#FFFDFB] to-[#FFF2F5] rounded-3xl p-5 border-2 border-[#E8B86D]/75 shadow-md mb-5">
+                    <!-- Glass Globe Preview -->
+                    <div class="w-28 h-28 mx-auto rounded-full bg-gradient-to-tr from-[#FFE5EC] via-white to-[#FFF3D6] border-2 border-[#E8B86D] shadow-inner flex items-center justify-center relative overflow-hidden mb-4">
+                        <span id="capsuleGlobeEmoji" class="text-4xl animate-float">🔮</span>
+                        <span class="absolute top-2 right-4 w-3 h-3 rounded-full bg-white/80"></span>
+                    </div>
+
+                    <!-- Dispensed Capsules List -->
+                    <div id="dispensedCapsulesList" class="space-y-2.5 min-h-[115px] flex flex-col justify-center mb-4">
+                        <p id="capsuleEmptyHint" class="text-xs italic text-[#8F6872]">No capsules dispensed yet — pull the golden lever!</p>
+                    </div>
+
+                    <!-- Dispense Lever Button -->
+                    <button id="dispenseCapsuleBtn" class="lever-pull btn-royal w-full py-3.5 px-6 rounded-2xl font-bold text-sm inline-flex items-center justify-center space-x-2 cursor-pointer">
+                        <span>🎰 Dispense Golden Capsule (<span id="capsuleCountBadge">0/3</span>)</span>
+                    </button>
+                </div>
+
+                <button id="toStep4Btn" class="hidden btn-royal w-full sm:w-auto px-8 py-3.5 rounded-2xl font-semibold text-sm sm:text-base items-center justify-center space-x-2 cursor-pointer">
+                    <span>Continue to 5-Candle Cake 🎂</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             STEP 4: INTERACTIVE 5-CANDLE WISH CAKE (TAP OR MIC BLOW)
+        ========================================================= -->
+        <section id="step-4" class="step-section w-full flex-col items-center text-center">
+            <div class="luxury-glass w-full rounded-3xl p-6 sm:p-9 relative">
+                <span class="inline-block bg-[#FFE5EC] text-[#9E4758] text-xs font-bold px-3.5 py-1 rounded-full mb-3 border border-[#FFC2D1]">
+                    🎂 Make Your Birthday Wish 🎂
+                </span>
+
+                <h2 class="font-serif-luxury text-2xl sm:text-4xl font-bold text-[#3B262C] mb-1.5">
+                    Blow Out the 5 Candles, Ibtisam!
+                </h2>
+                <p id="cakeInstruction" class="text-xs sm:text-sm text-[#6D5158] mb-4">
+                    Close your eyes, make a wish, and tap each candle (or use the blow button / mic) to extinguish all 5 flames!
+                </p>
+
+                <!-- Interactive Tiered Cake Container -->
+                <div id="cakeContainer" class="relative w-full max-w-xs mx-auto my-1 pt-4 pb-1 cursor-pointer select-none">
+                    <div id="smokeContainer" class="absolute inset-x-0 top-2 h-16 pointer-events-none z-20"></div>
+
+                    <svg class="w-full h-auto drop-shadow-md" viewBox="0 0 320 255" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="160" cy="230" rx="132" ry="14" fill="#E8D5D9"/>
+                        <ellipse cx="160" cy="226" rx="126" ry="11" fill="#FFFFFF"/>
+                        <path d="M132 232H188L196 247H124L132 232Z" fill="#D4A359"/>
+
+                        <rect x="52" y="155" width="216" height="70" rx="16" fill="url(#tierBot3)"/>
+                        <path d="M52 167C52 159 60 155 68 155H252C260 155 268 159 268 167V177C268 183 260 186 256 180C252 174 244 174 240 182C236 190 226 190 222 181C218 172 208 172 204 182C200 192 188 192 184 181C180 170 168 170 164 182C160 193 148 193 144 181C140 170 128 170 124 181C120 191 108 191 104 181C100 172 90 172 86 180C82 186 72 186 68 180C64 174 52 183 52 177V167Z" fill="#FFFDFD"/>
+                        <circle cx="80" cy="208" r="3.5" fill="#F4D086"/>
+                        <circle cx="107" cy="208" r="3.5" fill="#F4D086"/>
+                        <circle cx="134" cy="208" r="3.5" fill="#F4D086"/>
+                        <circle cx="160" cy="208" r="3.5" fill="#F4D086"/>
+                        <circle cx="186" cy="208" r="3.5" fill="#F4D086"/>
+                        <circle cx="213" cy="208" r="3.5" fill="#F4D086"/>
+                        <circle cx="240" cy="208" r="3.5" fill="#F4D086"/>
+
+                        <rect x="82" y="96" width="156" height="61" rx="14" fill="url(#tierTop3)"/>
+                        <path d="M82 108C82 101 88 96 96 96H224C232 96 238 101 238 108V115C238 120 231 122 227 117C223 112 215 112 211 119C207 126 197 126 193 118C189 110 179 110 175 119C171 127 161 127 157 118C153 110 143 110 139 118C135 126 125 126 121 118C117 110 107 110 103 118C99 125 89 122 85 117C82 114 82 115 82 108Z" fill="#FFF5F7"/>
+
+                        <g class="candle-group" data-candle="0">
+                            <rect x="98" y="60" width="9" height="36" rx="4" fill="#FFD6E0" stroke="#9E4758" stroke-width="1.4"/>
+                            <line x1="102.5" y1="60" x2="102.5" y2="54" stroke="#3B262C" stroke-width="2"/>
+                            <path id="flame-0" class="flame" d="M102.5 33C102.5 33 109.5 42.5 109.5 48C109.5 52 106.4 54.5 102.5 54.5C98.6 54.5 95.5 52 95.5 48C95.5 42.5 102.5 33 102.5 33Z" fill="url(#flameGrad3)"/>
+                        </g>
+                        <g class="candle-group" data-candle="1">
+                            <rect x="127" y="54" width="9" height="42" rx="4" fill="#FFF0D6" stroke="#C88A4B" stroke-width="1.4"/>
+                            <line x1="131.5" y1="54" x2="131.5" y2="48" stroke="#3B262C" stroke-width="2"/>
+                            <path id="flame-1" class="flame" d="M131.5 27C131.5 27 138.5 36.5 138.5 42C138.5 46 135.4 48.5 131.5 48.5C127.6 48.5 124.5 46 124.5 42C124.5 36.5 131.5 27 131.5 27Z" fill="url(#flameGrad3)"/>
+                        </g>
+                        <g class="candle-group" data-candle="2">
+                            <rect x="155.5" y="48" width="9" height="48" rx="4" fill="#FFD6E0" stroke="#9E4758" stroke-width="1.4"/>
+                            <line x1="160" y1="48" x2="160" y2="42" stroke="#3B262C" stroke-width="2"/>
+                            <path id="flame-2" class="flame" d="M160 20C160 20 167.5 30 167.5 36C167.5 40.2 164.1 42.8 160 42.8C155.9 42.8 152.5 40.2 152.5 36C152.5 30 160 20 160 20Z" fill="url(#flameGrad3)"/>
+                        </g>
+                        <g class="candle-group" data-candle="3">
+                            <rect x="184" y="54" width="9" height="42" rx="4" fill="#FFF0D6" stroke="#C88A4B" stroke-width="1.4"/>
+                            <line x1="188.5" y1="54" x2="188.5" y2="48" stroke="#3B262C" stroke-width="2"/>
+                            <path id="flame-3" class="flame" d="M188.5 27C188.5 27 195.5 36.5 195.5 42C195.5 46 192.4 48.5 188.5 48.5C184.6 48.5 181.5 46 181.5 42C181.5 36.5 188.5 27 188.5 27Z" fill="url(#flameGrad3)"/>
+                        </g>
+                        <g class="candle-group" data-candle="4">
+                            <rect x="213" y="60" width="9" height="36" rx="4" fill="#FFD6E0" stroke="#9E4758" stroke-width="1.4"/>
+                            <line x1="217.5" y1="60" x2="217.5" y2="54" stroke="#3B262C" stroke-width="2"/>
+                            <path id="flame-4" class="flame" d="M217.5 33C217.5 33 224.5 42.5 224.5 48C224.5 52 221.4 54.5 217.5 54.5C213.6 54.5 210.5 52 210.5 48C210.5 42.5 217.5 33 217.5 33Z" fill="url(#flameGrad3)"/>
+                        </g>
+
+                        <defs>
+                            <linearGradient id="tierBot3" x1="52" y1="155" x2="268" y2="225" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F4ACB7"/>
+                                <stop offset="1" stop-color="#C97384"/>
+                            </linearGradient>
+                            <linearGradient id="tierTop3" x1="82" y1="96" x2="238" y2="157" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FFCAD4"/>
+                                <stop offset="1" stop-color="#E5989B"/>
+                            </linearGradient>
+                            <linearGradient id="flameGrad3" x1="160" y1="20" x2="160" y2="43" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FFF3B0"/>
+                                <stop offset="0.5" stop-color="#FFB703"/>
+                                <stop offset="1" stop-color="#FB8500"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+
+                <!-- Controls: Blow Out Button + Optional Mic Blow Listener -->
+                <div class="mt-3 flex flex-col sm:flex-row items-center justify-center gap-2.5">
+                    <button id="blowCandlesBtn" class="btn-royal w-full sm:w-auto px-7 py-3.5 rounded-2xl font-semibold text-sm inline-flex items-center justify-center space-x-2 cursor-pointer">
+                        <span>💨 Make a Wish & Blow Candles</span>
+                    </button>
+
+                    <button id="micBlowBtn" class="w-full sm:w-auto px-5 py-3.5 rounded-2xl font-semibold text-xs sm:text-sm bg-white/90 hover:bg-white text-[#9E4758] border border-[#EBC7D0] shadow-xs transition inline-flex items-center justify-center space-x-1.5 cursor-pointer">
+                        <span>🎙️ Blow via Mic</span>
+                    </button>
+
+                    <button id="toStep5Btn" class="hidden btn-royal w-full sm:w-auto px-8 py-3.5 rounded-2xl font-semibold text-sm sm:text-base items-center justify-center space-x-2 cursor-pointer">
+                        <span>Pop Friendship Balloons 🎈</span>
+                    </button>
+                </div>
+                <p id="micStatusText" class="text-[11px] text-[#7A535D] mt-2 hidden"></p>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             STEP 5: POP THE 6 GOLDEN FRIENDSHIP BALLOONS
+        ========================================================= -->
+        <section id="step-5" class="step-section w-full flex-col items-center text-center">
+            <div class="luxury-glass w-full rounded-3xl p-6 sm:p-9 relative">
+                <span class="inline-block bg-[#FFF0D6] text-[#B88128] text-xs font-bold px-3.5 py-1 rounded-full mb-3 border border-[#F5DCAA]">
+                    🎈 6 Blessings From Awais Azam 🎈
+                </span>
+
+                <h2 class="font-serif-luxury text-2xl sm:text-4xl font-bold text-[#3B262C] mb-1.5">
+                    Pop All 6 Wish Balloons!
+                </h2>
+                <p id="balloonInstruction" class="text-xs sm:text-sm text-[#6D5158] mb-5">
+                    Tap each balloon to burst it and unlock 6 special birthday wishes for you, Ibtisam!
+                </p>
+
+                <!-- 6 Interactive Balloons Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+                    <button type="button" class="wish-balloon p-4 rounded-2xl bg-gradient-to-b from-[#FFE5EC] to-[#FFC2D1] border border-white shadow-sm flex flex-col items-center justify-center cursor-pointer" data-wish="True Brotherhood 🤝" style="animation-delay: 0s;">
+                        <span class="text-3xl mb-1 balloon-icon">🎈</span>
+                        <span class="text-xs font-bold text-[#7A3E4D] balloon-label">Tap to Pop</span>
+                    </button>
+
+                    <button type="button" class="wish-balloon p-4 rounded-2xl bg-gradient-to-b from-[#FFF3D6] to-[#FFE1A8] border border-white shadow-sm flex flex-col items-center justify-center cursor-pointer" data-wish="Endless Success 🏆" style="animation-delay: 0.3s;">
+                        <span class="text-3xl mb-1 balloon-icon">🎈</span>
+                        <span class="text-xs font-bold text-[#855B18] balloon-label">Tap to Pop</span>
+                    </button>
+
+                    <button type="button" class="wish-balloon p-4 rounded-2xl bg-gradient-to-b from-[#F3E5F5] to-[#E1BEE7] border border-white shadow-sm flex flex-col items-center justify-center cursor-pointer" data-wish="Good Health & Peace 💖" style="animation-delay: 0.6s;">
+                        <span class="text-3xl mb-1 balloon-icon">🎈</span>
+                        <span class="text-xs font-bold text-[#6A3575] balloon-label">Tap to Pop</span>
+                    </button>
+
+                    <button type="button" class="wish-balloon p-4 rounded-2xl bg-gradient-to-b from-[#E0F2F1] to-[#B2DFDB] border border-white shadow-sm flex flex-col items-center justify-center cursor-pointer" data-wish="Unstoppable Dreams 🚀" style="animation-delay: 0.9s;">
+                        <span class="text-3xl mb-1 balloon-icon">🎈</span>
+                        <span class="text-xs font-bold text-[#2B6660] balloon-label">Tap to Pop</span>
+                    </button>
+
+                    <button type="button" class="wish-balloon p-4 rounded-2xl bg-gradient-to-b from-[#FFF0F3] to-[#FFCCD5] border border-white shadow-sm flex flex-col items-center justify-center cursor-pointer" data-wish="Pure Happiness 😊" style="animation-delay: 1.2s;">
+                        <span class="text-3xl mb-1 balloon-icon">🎈</span>
+                        <span class="text-xs font-bold text-[#8F394D] balloon-label">Tap to Pop</span>
+                    </button>
+
+                    <button type="button" class="wish-balloon p-4 rounded-2xl bg-gradient-to-b from-[#FFF8E7] to-[#FDE4B2] border border-white shadow-sm flex flex-col items-center justify-center cursor-pointer" data-wish="Best Friends Forever 👑" style="animation-delay: 1.5s;">
+                        <span class="text-3xl mb-1 balloon-icon">🎈</span>
+                        <span class="text-xs font-bold text-[#8A5A19] balloon-label">Tap to Pop</span>
+                    </button>
+                </div>
+
+                <p id="balloonCounterText" class="text-xs font-semibold text-[#9E4758] mb-4">
+                    Balloons Popped: 0 / 6
+                </p>
+
+                <button id="toStep6Btn" class="hidden btn-royal w-full sm:w-auto px-8 py-3.5 rounded-2xl font-semibold text-sm sm:text-base items-center justify-center space-x-2 cursor-pointer">
+                    <span>Open Royal Letter From Awais 💌</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             STEP 6: WAX-SEALED ROYAL LETTER FROM AWAIS AZAM
+        ========================================================= -->
+        <section id="step-6" class="step-section w-full flex-col items-center text-center">
+            <div class="luxury-glass w-full rounded-3xl p-6 sm:p-9 relative">
+                <span class="inline-block bg-[#FFE5EC] text-[#9E4758] text-xs font-bold px-3.5 py-1 rounded-full mb-2 border border-[#FFC2D1]">
+                    💌 Personal Message From Awais Azam 💌
+                </span>
+
+                <h2 class="font-serif-luxury text-2xl sm:text-3xl font-bold text-[#3B262C] mb-1">
+                    A Letter For Ibtisam Sheikh
+                </h2>
+                <p id="envelopePrompt" class="text-xs sm:text-sm text-[#6D5158] mb-5">
+                    Tap the royal gold wax seal to unseal your birthday letter
+                </p>
+
+                <!-- Interactive Envelope -->
+                <div id="envelopeBox" class="relative w-full max-w-md mx-auto mb-6 cursor-pointer">
+                    <!-- Closed Envelope -->
+                    <div id="closedEnvelope" class="relative h-52 sm:h-56 w-full rounded-2xl bg-gradient-to-br from-[#F9DCE2] to-[#E9B0BC] shadow-lg border border-white/90 overflow-hidden flex items-center justify-center transition-all duration-500 hover:scale-[1.02]">
+                        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 400 220" preserveAspectRatio="none">
+                            <polygon points="0,0 200,125 0,220" fill="#F5CED6" opacity="0.85"/>
+                            <polygon points="400,0 200,125 400,220" fill="#F1C2CC" opacity="0.85"/>
+                            <polygon points="0,220 200,110 400,220" fill="#FADCE2"/>
+                            <polygon points="0,0 200,130 400,0" fill="#E39CA9"/>
+                        </svg>
+
+                        <!-- Gold & Crimson Wax Seal -->
+                        <div class="relative z-10 w-20 h-20 rounded-full bg-gradient-to-br from-[#B56576] to-[#7D2E3F] border-2 border-[#F4D086] shadow-xl flex flex-col items-center justify-center text-white">
+                            <span class="font-royal text-sm font-bold leading-none text-[#F4D086]">AA ➔ IS</span>
+                            <span class="text-[9px] uppercase tracking-widest opacity-95 mt-1">Break Seal</span>
+                        </div>
+                    </div>
+
+                    <!-- Opened Royal Letter -->
+                    <div id="openedLetter" class="hidden text-left bg-[#FFFDFB] rounded-2xl p-5 sm:p-7 border border-[#E8B86D]/60 shadow-inner max-h-[360px] overflow-y-auto custom-scroll">
+                        <div class="flex items-center justify-between border-b border-[#F5E1E6] pb-3 mb-4">
+                            <div>
+                                <p class="text-[11px] uppercase tracking-widest text-[#B88128] font-bold">To My Best Friend</p>
+                                <span class="font-calligraphy text-3xl sm:text-4xl text-[#9E4758] font-bold">Dear Ibtisam Sheikh,</span>
+                            </div>
+                            <span class="text-2xl">👑</span>
+                        </div>
+
+                        <div class="space-y-3 text-sm sm:text-[15px] text-[#4E363C] leading-relaxed">
+                            <p>
+                                Happy Birthday, brother! Today isn’t just another date on the calendar—it’s the celebration of an incredible friend who makes every moment brighter, lighter, and unforgettable.
+                            </p>
+                            <p class="italic font-serif-luxury text-[#9E4758] bg-[#FFF5F7] p-3.5 rounded-xl border-l-4 border-[#D4A359]">
+                                “May Allah bless your life with boundless success, unshakeable health, true happiness, and every single dream your heart desires. Keep rising higher every year!”
+                            </p>
+                            <p>
+                                Thank you for always being a genuine friend and standing strong through thick and thin. No matter where life takes us, you’ll always have a brother cheering for your victories. Have the greatest birthday ever!
+                            </p>
+                        </div>
+
+                        <div class="mt-5 pt-3 border-t border-[#F5E1E6] flex items-center justify-between">
+                            <div>
+                                <p class="text-xs text-[#7A535D]">With endless brotherhood & best wishes,</p>
+                                <p class="font-calligraphy text-2xl sm:text-3xl text-[#9E4758] font-bold">Awais Azam ✨</p>
+                            </div>
+                            <span class="text-2xl">🎂</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="toStep7Btn" class="hidden btn-royal w-full sm:w-auto px-8 py-4 rounded-2xl font-semibold text-sm sm:text-base items-center justify-center space-x-2 cursor-pointer">
+                    <span>Unlock Grand Finale Keepsake 🎆</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- =========================================================
+             STEP 7: GRAND FINALE — PERMANENT LOCKED KEEPSAKE (NO REPLAY)
+             Direct WhatsApp Button to Awais Azam (+923413224882)
+        ========================================================= -->
+        <section id="step-7" class="step-section w-full flex-col items-center text-center">
+            <div class="luxury-glass w-full rounded-3xl p-6 sm:p-10 relative overflow-hidden border-2 border-[#E8B86D]/70">
+                <!-- Sealed Forever Status Pill -->
+                <div class="inline-flex items-center space-x-1.5 bg-[#FFF0D6] text-[#9E6B19] text-[11px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4 border border-[#E8B86D]/60">
+                    <span>🔒 Memory Sealed Forever • One-Time Experience</span>
+                </div>
+
+                <!-- Royal Crown Emblem -->
+                <div class="w-16 h-16 mx-auto mb-3 rounded-full bg-gradient-to-br from-[#FFF3D6] to-[#FAD2E1] border-2 border-[#D4A359] flex items-center justify-center text-3xl shadow-md animate-float">
+                    👑
+                </div>
+
+                <h1 class="font-serif-luxury text-3xl sm:text-5xl font-bold text-[#3B262C] leading-tight mb-1">
+                    Happy Birthday,
+                </h1>
+                <h2 class="font-calligraphy text-5xl sm:text-6xl text-[#9E4758] font-bold mb-5">
+                    Ibtisam Sheikh! 🎉
+                </h2>
+
+                <!-- Official Keepsake Certificate Card -->
+                <div class="bg-gradient-to-br from-[#FFFDF9] via-[#FFF6F8] to-[#FFF8EB] rounded-2xl p-5 sm:p-6 border border-[#E8B86D]/80 shadow-sm mb-6 max-w-md mx-auto">
+                    <p class="font-royal text-xs font-bold uppercase tracking-[0.2em] text-[#B88128] mb-2">
+                        ★ Official Birthday Keepsake ★
+                    </p>
+                    <p class="text-xs sm:text-sm text-[#553D43] leading-relaxed mb-3">
+                        This exclusive digital birthday celebration was specially crafted and gifted with love & brotherhood by your best friend:
+                    </p>
+                    <p class="font-calligraphy text-3xl text-[#9E4758] font-bold">
+                        Awais Azam
+                    </p>
+                </div>
+
+                <!-- Primary CTA: Direct WhatsApp Reply to Awais Azam (+923413224882) — NO REPLAY BUTTON -->
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <a id="thankAwaisWhatsappBtn"
+                       href="https://wa.me/923413224882?text=Thank%20you%20so%20much%20mere%20bhai%20Awais%20Azam!%20I%20just%20experienced%20the%20unforgettable%20Birthday%20Surprise%20website%20you%20gifted%20me.%20Best%20birthday%20gift%20ever!%20%F0%9F%8E%82%E2%9C%A8%F0%9F%A4%9D"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full sm:w-auto px-8 py-4 rounded-2xl font-bold text-sm sm:text-base bg-gradient-to-r from-[#1EBE5D] to-[#25D366] hover:from-[#19A851] hover:to-[#20BD5A] text-white shadow-[0_12px_28px_rgba(37,211,102,0.42)] transition transform hover:-translate-y-0.5 inline-flex items-center justify-center space-x-2.5">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 32 32">
+                            <path d="M16.004 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.256.59 4.46 1.71 6.404L3.2 28.8l6.564-1.72a12.74 12.74 0 0 0 6.24 1.62h.006c7.058 0 12.794-5.74 12.794-12.8 0-3.42-1.332-6.636-3.75-9.054A12.715 12.715 0 0 0 16.004 3.2zm0 23.34h-.004a10.6 10.6 0 0 1-5.404-1.48l-.388-.23-3.896 1.022 1.04-3.798-.252-.402a10.575 10.575 0 0 1-1.624-5.652c0-5.856 4.764-10.62 10.624-10.62 2.836 0 5.502 1.106 7.506 3.112a10.553 10.553 0 0 1 3.11 7.512c0 5.858-4.766 10.62-10.616 10.62zm5.826-7.954c-.32-.16-1.89-.932-2.182-1.038-.292-.106-.506-.16-.718.16-.214.32-.826 1.038-1.012 1.252-.186.212-.372.24-.692.08-.32-.16-1.35-.498-2.572-1.588-.95-.848-1.592-1.896-1.778-2.216-.186-.32-.02-.492.14-.652.144-.144.32-.372.48-.558.16-.186.212-.32.32-.532.106-.214.052-.4-.028-.56-.08-.16-.718-1.732-.984-2.372-.26-.622-.524-.538-.718-.548l-.612-.01c-.214 0-.56.08-.852.4-.292.32-1.118 1.092-1.118 2.664s1.144 3.09 1.304 3.304c.16.212 2.252 3.438 5.456 4.822.762.328 1.356.526 1.82.672.766.244 1.462.21 2.012.128.614-.092 1.89-.772 2.156-1.518.266-.746.266-1.384.186-1.518-.08-.134-.292-.214-.612-.374z"/>
+                        </svg>
+                        <span>Send Thanks to Awais Azam on WhatsApp</span>
+                    </a>
+
+                    <button id="moreFireworksBtn" class="w-full sm:w-auto px-6 py-3 rounded-2xl font-semibold text-xs sm:text-sm bg-white/90 hover:bg-white text-[#9E4758] border border-[#EBC7D0] shadow-xs transition cursor-pointer">
+                        🎆 Celebrate With More Fireworks
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Subtle Royal Footer -->
+    <footer class="w-full text-center py-2 z-10 text-xs text-[#F4D086]/80">
+        Crafted exclusively for <strong class="text-[#F8BBD0]">Ibtisam Sheikh</strong> • Gifted by <strong class="text-[#F4D086]">Awais Azam</strong> ✨
+    </footer>
+
+    <!-- =========================================================
+         JAVASCRIPT: 7-STEP JOURNEY, CAPSULE DISPENSER & LOCK
+    ========================================================= -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const STORAGE_LOCK_KEY = 'ibtisam_bday_awais_v3_locked';
+
+            // Optional testing reset via ?reset=1 in URL query string while keeping normal flow strictly one-time
+            try {
+                const params = new URLSearchParams(window.location.search);
+                if (params.get('reset') === '1') {
+                    localStorage.removeItem(STORAGE_LOCK_KEY);
+                }
+            } catch (e) {}
+
+            /* ---------------------------------------------------------
+               1. WEB AUDIO API SYNTHESIZER (Music Box & Chimes)
+            --------------------------------------------------------- */
+            let audioCtx = null;
+            let isMusicPlaying = false;
+            let melodyTimer = null;
+
+            const audioToggleBtn = document.getElementById('audioToggleBtn');
+            const audioIcon = document.getElementById('audioIcon');
+            const audioText = document.getElementById('audioText');
+
+            function ensureAudioContext() {
+                if (!audioCtx) {
+                    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                }
+                if (audioCtx.state === 'suspended') {
+                    audioCtx.resume();
+                }
+            }
+
+            function playNote(freq, duration, delay = 0, volume = 0.08) {
+                if (!audioCtx) return;
+                try {
+                    const now = audioCtx.currentTime + delay;
+                    const osc = audioCtx.createOscillator();
+                    const gain = audioCtx.createGain();
+                    osc.type = 'sine';
+                    osc.frequency.setValueAtTime(freq, now);
+                    gain.gain.setValueAtTime(0.001, now);
+                    gain.gain.exponentialRampToValueAtTime(volume, now + 0.03);
+                    gain.gain.exponentialRampToValueAtTime(0.0001, now + duration);
+                    osc.connect(gain);
+                    gain.connect(audioCtx.destination);
+                    osc.start(now);
+                    osc.stop(now + duration + 0.05);
+                } catch (e) {}
+            }
+
+            function playSparkleChime() {
+                try {
+                    ensureAudioContext();
+                    const notes = [523.25, 659.25, 783.99, 1046.50];
+                    notes.forEach((n, idx) => playNote(n, 0.35, idx * 0.06, 0.07));
+                } catch (e) {}
+            }
+
+            const hbdMelody = [
+                [261.63, 0.35], [261.63, 0.25], [293.66, 0.6], [261.63, 0.6], [349.23, 0.6], [329.63, 1.0],
+                [261.63, 0.35], [261.63, 0.25], [293.66, 0.6], [261.63, 0.6], [392.00, 0.6], [349.23, 1.0],
+                [261.63, 0.35], [261.63, 0.25], [523.25, 0.6], [440.00, 0.6], [349.23, 0.6], [329.63, 0.6], [293.66, 1.0],
+                [466.16, 0.35], [466.16, 0.25], [440.00, 0.6], [349.23, 0.6], [392.00, 0.6], [349.23, 1.1]
+            ];
+
+            function startMelody() {
+                if (isMusicPlaying) return;
+                try {
+                    ensureAudioContext();
+                    isMusicPlaying = true;
+                    audioIcon.textContent = '🎵';
+                    audioText.textContent = 'Playing';
+
+                    const loopMelody = () => {
+                        if (!isMusicPlaying) return;
+                        let offset = 0;
+                        hbdMelody.forEach(([freq, dur]) => {
+                            playNote(freq, dur * 0.9, offset, 0.065);
+                            offset += dur * 0.65;
+                        });
+                        melodyTimer = setTimeout(loopMelody, (offset + 0.8) * 1000);
+                    };
+                    loopMelody();
+                } catch (e) {}
+            }
+
+            function stopMelody() {
+                isMusicPlaying = false;
+                clearTimeout(melodyTimer);
+                audioIcon.textContent = '🔇';
+                audioText.textContent = 'Play Music';
+            }
+
+            audioToggleBtn.addEventListener('click', () => {
+                if (isMusicPlaying) stopMelody();
+                else startMelody();
+            });
+
+            /* ---------------------------------------------------------
+               2. CELEBRATION CONFETTI & FIREWORKS CANVAS
+            --------------------------------------------------------- */
+            const canvas = document.getElementById('celebrationCanvas');
+            const ctx = canvas.getContext('2d');
+            let particles = [];
+            let finaleFireworksInterval = null;
+
+            function resizeCanvas() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            window.addEventListener('resize', resizeCanvas);
+            resizeCanvas();
+
+            const colors = ['#9E4758', '#E5989B', '#D4A359', '#F4D086', '#FF8FA3', '#FFFFFF'];
+
+            function launchConfetti(x, y, count = 50) {
+                for (let i = 0; i < count; i++) {
+                    const angle = Math.random() * Math.PI * 2;
+                    const speed = 2.5 + Math.random() * 6.5;
+                    particles.push({
+                        x,
+                        y,
+                        vx: Math.cos(angle) * speed,
+                        vy: Math.sin(angle) * speed - 2,
+                        size: 4 + Math.random() * 6,
+                        color: colors[Math.floor(Math.random() * colors.length)],
+                        alpha: 1,
+                        decay: 0.012 + Math.random() * 0.015,
+                        rotation: Math.random() * 360,
+                        vRot: (Math.random() - 0.5) * 10
+                    });
+                }
+            }
+
+            function animateParticles() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                for (let i = particles.length - 1; i >= 0; i--) {
+                    const p = particles[i];
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    p.vy += 0.14;
+                    p.alpha -= p.decay;
+                    p.rotation += p.vRot;
+
+                    if (p.alpha <= 0) {
+                        particles.splice(i, 1);
+                        continue;
+                    }
+
+                    ctx.save();
+                    ctx.globalAlpha = p.alpha;
+                    ctx.translate(p.x, p.y);
+                    ctx.rotate((p.rotation * Math.PI) / 180);
+                    ctx.fillStyle = p.color;
+                    ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size * 0.65);
+                    ctx.restore();
+                }
+                requestAnimationFrame(animateParticles);
+            }
+            animateParticles();
+
+            /* ---------------------------------------------------------
+               3. JOURNEY NAVIGATION & ONE-TIME COMPLETION LOCK
+            --------------------------------------------------------- */
+            const totalSteps = 7;
+
+            function goToStep(stepNumber) {
+                for (let i = 1; i <= totalSteps; i++) {
+                    const section = document.getElementById(`step-${i}`);
+                    const dot = document.getElementById(`dot-${i}`);
+                    if (i === stepNumber) {
+                        section.classList.add('active');
+                        dot.classList.remove('bg-[#D98292]/35');
+                        dot.classList.add('bg-[#9E4758]', 'scale-125');
+                    } else {
+                        section.classList.remove('active');
+                        dot.classList.remove('bg-[#9E4758]', 'scale-125');
+                        dot.classList.add('bg-[#D98292]/35');
+                    }
+                }
+                document.getElementById('stepLabel').textContent = stepNumber === 7 ? 'Completed ✨' : `${stepNumber} / ${totalSteps}`;
+
+                if (stepNumber === 2) {
+                    setTimeout(initScratchCard, 80);
+                }
+
+                clearInterval(finaleFireworksInterval);
+                if (stepNumber === 7) {
+                    try {
+                        localStorage.setItem(STORAGE_LOCK_KEY, 'true');
+                    } catch (e) {}
+
+                    launchConfetti(canvas.width * 0.3, canvas.height * 0.35, 85);
+                    setTimeout(() => launchConfetti(canvas.width * 0.7, canvas.height * 0.35, 85), 350);
+                    finaleFireworksInterval = setInterval(() => {
+                        const rx = canvas.width * (0.2 + Math.random() * 0.6);
+                        const ry = canvas.height * (0.18 + Math.random() * 0.38);
+                        launchConfetti(rx, ry, 55);
+                    }, 1850);
+                }
+            }
+
+            let alreadyCompleted = false;
+            try {
+                alreadyCompleted = localStorage.getItem(STORAGE_LOCK_KEY) === 'true';
+            } catch (e) {
+                alreadyCompleted = false;
+            }
+
+            if (alreadyCompleted) {
+                goToStep(7);
+            }
+
+            /* ---------------------------------------------------------
+               STEP 1: OPEN GIFT BOX
+            --------------------------------------------------------- */
+            function handleOpenGift() {
+                startMelody();
+                playSparkleChime();
+                launchConfetti(canvas.width / 2, canvas.height / 2, 75);
+                goToStep(2);
+            }
+
+            document.getElementById('openGiftBtn').addEventListener('click', handleOpenGift);
+            document.getElementById('startJourneyBtn').addEventListener('click', handleOpenGift);
+
+            /* ---------------------------------------------------------
+               STEP 2: INTERACTIVE GOLDEN SCRATCH CARD
+            --------------------------------------------------------- */
+            const scratchCanvas = document.getElementById('scratchCanvas');
+            const scratchCtx = scratchCanvas.getContext('2d');
+            const scratchProgressBar = document.getElementById('scratchProgressBar');
+            const scratchPercentText = document.getElementById('scratchPercentText');
+            const toStep3Btn = document.getElementById('toStep3Btn');
+            let isScratching = false;
+            let scratchUnlocked = false;
+            let scratchInitialized = false;
+
+            function initScratchCard() {
+                if (scratchInitialized) return;
+                const wrapper = document.getElementById('scratchWrapper');
+                const rect = wrapper.getBoundingClientRect();
+                if (rect.width === 0 || rect.height === 0) return;
+
+                scratchCanvas.width = rect.width;
+                scratchCanvas.height = rect.height;
+
+                const grad = scratchCtx.createLinearGradient(0, 0, scratchCanvas.width, scratchCanvas.height);
+                grad.addColorStop(0, '#E8B86D');
+                grad.addColorStop(0.5, '#F4D086');
+                grad.addColorStop(1, '#C88A4B');
+                scratchCtx.fillStyle = grad;
+                scratchCtx.fillRect(0, 0, scratchCanvas.width, scratchCanvas.height);
+
+                scratchCtx.fillStyle = '#FFFFFF';
+                scratchCtx.font = 'bold 16px Plus Jakarta Sans, sans-serif';
+                scratchCtx.textAlign = 'center';
+                scratchCtx.fillText('✨ SCRATCH GOLD FOIL HERE ✨', scratchCanvas.width / 2, scratchCanvas.height / 2);
+
+                scratchInitialized = true;
+            }
+
+            function scratchAt(clientX, clientY) {
+                if (!scratchInitialized || scratchUnlocked) return;
+                const rect = scratchCanvas.getBoundingClientRect();
+                const x = clientX - rect.left;
+                const y = clientY - rect.top;
+
+                scratchCtx.globalCompositeOperation = 'destination-out';
+                scratchCtx.beginPath();
+                scratchCtx.arc(x, y, 24, 0, Math.PI * 2);
+                scratchCtx.fill();
+
+                checkScratchProgress();
+            }
+
+            function checkScratchProgress() {
+                const imgData = scratchCtx.getImageData(0, 0, scratchCanvas.width, scratchCanvas.height).data;
+                let transparentPixels = 0;
+                const totalSampled = imgData.length / 16;
+
+                for (let i = 3; i < imgData.length; i += 16) {
+                    if (imgData[i] < 128) transparentPixels++;
+                }
+
+                const pct = Math.min(100, Math.round((transparentPixels / totalSampled) * 100));
+                scratchProgressBar.style.width = `${pct}%`;
+                scratchPercentText.textContent = `Scratched: ${pct}%`;
+
+                if (pct >= 45 && !scratchUnlocked) {
+                    scratchUnlocked = true;
+                    scratchCanvas.style.transition = 'opacity 0.5s ease';
+                    scratchCanvas.style.opacity = '0';
+                    setTimeout(() => {
+                        scratchCanvas.style.display = 'none';
+                    }, 500);
+                    scratchProgressBar.style.width = '100%';
+                    scratchPercentText.textContent = 'Secret Note Unlocked! ✨';
+                    playSparkleChime();
+                    launchConfetti(canvas.width / 2, canvas.height * 0.45, 65);
+                    toStep3Btn.classList.remove('hidden');
+                    toStep3Btn.classList.add('inline-flex');
+                }
+            }
+
+            scratchCanvas.addEventListener('mousedown', (e) => {
+                isScratching = true;
+                scratchAt(e.clientX, e.clientY);
+            });
+            window.addEventListener('mouseup', () => {
+                isScratching = false;
+            });
+            scratchCanvas.addEventListener('mousemove', (e) => {
+                if (isScratching) scratchAt(e.clientX, e.clientY);
+            });
+
+            scratchCanvas.addEventListener('touchstart', (e) => {
+                isScratching = true;
+                const touch = e.touches[0];
+                scratchAt(touch.clientX, touch.clientY);
+            }, { passive: true });
+            window.addEventListener('touchend', () => {
+                isScratching = false;
+            });
+            scratchCanvas.addEventListener('touchmove', (e) => {
+                if (!isScratching) return;
+                const touch = e.touches[0];
+                scratchAt(touch.clientX, touch.clientY);
+            }, { passive: true });
+
+            toStep3Btn.addEventListener('click', () => {
+                playSparkleChime();
+                goToStep(3);
+            });
+
+            /* ---------------------------------------------------------
+               STEP 3: GOLDEN FRIENDSHIP CAPSULE DISPENSER
+            --------------------------------------------------------- */
+            const capsuleRewards = [
+                { icon: '💎', title: 'Capsule #1 — Golden Loyalty', text: '“Real friends are rare gems—thank you for always being genuine, Ibtisam!”' },
+                { icon: '🚀', title: 'Capsule #2 — Unstoppable Year Ahead', text: '“May this new chapter bring massive success, pride, and victories in everything you do!”' },
+                { icon: '👑', title: 'Capsule #3 — Brotherhood Promise', text: '“No matter what, your brother Awais Azam is always in your corner cheering for you!”' }
+            ];
+            let dispensedCount = 0;
+            const dispenseCapsuleBtn = document.getElementById('dispenseCapsuleBtn');
+            const dispensedCapsulesList = document.getElementById('dispensedCapsulesList');
+            const capsuleEmptyHint = document.getElementById('capsuleEmptyHint');
+            const capsuleCountBadge = document.getElementById('capsuleCountBadge');
+            const capsuleGlobeEmoji = document.getElementById('capsuleGlobeEmoji');
+            const toStep4Btn = document.getElementById('toStep4Btn');
+
+            dispenseCapsuleBtn.addEventListener('click', () => {
+                if (dispensedCount >= capsuleRewards.length) return;
+
+                const reward = capsuleRewards[dispensedCount];
+                dispensedCount++;
+                capsuleCountBadge.textContent = `${dispensedCount}/3`;
+                capsuleGlobeEmoji.textContent = reward.icon;
+
+                if (capsuleEmptyHint) {
+                    capsuleEmptyHint.remove();
+                }
+
+                const card = document.createElement('div');
+                card.className = 'capsule-reveal text-left bg-white/95 rounded-2xl p-3.5 border border-[#E8B86D]/70 shadow-xs';
+                card.innerHTML = `
+                    <div class="flex items-center space-x-2 mb-1">
+                        <span class="text-base">${reward.icon}</span>
+                        <span class="text-xs font-bold text-[#9E4758]">${reward.title}</span>
+                    </div>
+                    <p class="text-xs text-[#4E363C] leading-relaxed">${reward.text}</p>
+                `;
+                dispensedCapsulesList.appendChild(card);
+
+                playSparkleChime();
+                launchConfetti(canvas.width / 2, canvas.height * 0.45, 45);
+
+                if (dispensedCount === capsuleRewards.length) {
+                    dispenseCapsuleBtn.classList.add('hidden');
+                    document.getElementById('capsuleInstruction').innerHTML = `<span class="font-semibold text-[#9E4758]">✨ All 3 golden friendship capsules unlocked! ✨</span>`;
+                    toStep4Btn.classList.remove('hidden');
+                    toStep4Btn.classList.add('inline-flex');
+                }
+            });
+
+            toStep4Btn.addEventListener('click', () => {
+                playSparkleChime();
+                goToStep(4);
+            });
+
+            /* ---------------------------------------------------------
+               STEP 4: 5-CANDLE WISH CAKE (TAP OR MIC BLOW)
+            --------------------------------------------------------- */
+            let candlesBlown = [false, false, false, false, false];
+            const blowCandlesBtn = document.getElementById('blowCandlesBtn');
+            const micBlowBtn = document.getElementById('micBlowBtn');
+            const micStatusText = document.getElementById('micStatusText');
+            const toStep5Btn = document.getElementById('toStep5Btn');
+            const cakeInstruction = document.getElementById('cakeInstruction');
+            const smokeContainer = document.getElementById('smokeContainer');
+            let micStream = null;
+            let micBlowActive = false;
+
+            function spawnSmoke(candleIdx) {
+                const positions = ['31%', '40%', '50%', '59%', '68%'];
+                const puff = document.createElement('div');
+                puff.className = 'smoke-puff';
+                puff.style.left = positions[candleIdx] || '50%';
+                puff.style.top = '14px';
+                smokeContainer.appendChild(puff);
+                setTimeout(() => puff.remove(), 1400);
+            }
+
+            function extinguishCandle(idx) {
+                if (candlesBlown[idx]) return;
+                candlesBlown[idx] = true;
+                const flameEl = document.getElementById(`flame-${idx}`);
+                if (flameEl) flameEl.classList.add('extinguished');
+                spawnSmoke(idx);
+                playSparkleChime();
+
+                if (candlesBlown.every(Boolean)) {
+                    micBlowActive = false;
+                    if (micStream) {
+                        micStream.getTracks().forEach(t => t.stop());
+                    }
+                    cakeInstruction.innerHTML = `<span class="font-semibold text-[#9E4758]">✨ All 5 candles blown! Your wish is on its way, Ibtisam! ✨</span>`;
+                    blowCandlesBtn.classList.add('hidden');
+                    micBlowBtn.classList.add('hidden');
+                    micStatusText.classList.add('hidden');
+                    toStep5Btn.classList.remove('hidden');
+                    toStep5Btn.classList.add('inline-flex');
+                    launchConfetti(canvas.width / 2, canvas.height * 0.45, 95);
+                }
+            }
+
+            document.querySelectorAll('.candle-group').forEach(group => {
+                group.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const idx = parseInt(group.getAttribute('data-candle'), 10);
+                    extinguishCandle(idx);
+                });
+            });
+
+            blowCandlesBtn.addEventListener('click', () => {
+                candlesBlown.forEach((blown, idx) => {
+                    if (!blown) {
+                        setTimeout(() => extinguishCandle(idx), idx * 140);
+                    }
+                });
+            });
+
+            micBlowBtn.addEventListener('click', async () => {
+                if (micBlowActive) return;
+                if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+                    micStatusText.textContent = 'Microphone not supported on this browser — tap the candles or Blow button!';
+                    micStatusText.classList.remove('hidden');
+                    return;
+                }
+                try {
+                    micBlowActive = true;
+                    micStatusText.textContent = '🎙️ Listening... Blow gently into your microphone!';
+                    micStatusText.classList.remove('hidden');
+                    micStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                    const micAudioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                    const source = micAudioCtx.createMediaStreamSource(micStream);
+                    const analyser = micAudioCtx.createAnalyser();
+                    analyser.fftSize = 256;
+                    source.connect(analyser);
+                    const dataArray = new Uint8Array(analyser.frequencyBinCount);
+
+                    const detectBlow = () => {
+                        if (!micBlowActive || candlesBlown.every(Boolean)) return;
+                        analyser.getByteFrequencyData(dataArray);
+                        let sum = 0;
+                        for (let i = 0; i < dataArray.length; i++) sum += dataArray[i];
+                        const avg = sum / dataArray.length;
+
+                        if (avg > 42) {
+                            const nextIdx = candlesBlown.findIndex(b => !b);
+                            if (nextIdx !== -1) extinguishCandle(nextIdx);
+                        }
+                        requestAnimationFrame(detectBlow);
+                    };
+                    detectBlow();
+                } catch (err) {
+                    micBlowActive = false;
+                    micStatusText.textContent = 'Mic permission declined — simply tap the candles or Blow button!';
+                    micStatusText.classList.remove('hidden');
+                }
+            });
+
+            toStep5Btn.addEventListener('click', () => {
+                playSparkleChime();
+                goToStep(5);
+            });
+
+            /* ---------------------------------------------------------
+               STEP 5: POP ALL 6 FRIENDSHIP BALLOONS
+            --------------------------------------------------------- */
+            let poppedCount = 0;
+            const balloonCounterText = document.getElementById('balloonCounterText');
+            const toStep6Btn = document.getElementById('toStep6Btn');
+
+            document.querySelectorAll('.wish-balloon').forEach(balloon => {
+                balloon.addEventListener('click', () => {
+                    if (balloon.classList.contains('popped')) return;
+                    balloon.classList.add('popped');
+                    poppedCount++;
+
+                    const wishText = balloon.getAttribute('data-wish');
+                    balloon.querySelector('.balloon-icon').textContent = '✨';
+                    balloon.querySelector('.balloon-label').textContent = wishText;
+                    balloonCounterText.textContent = `Balloons Popped: ${poppedCount} / 6`;
+
+                    playSparkleChime();
+                    const rect = balloon.getBoundingClientRect();
+                    launchConfetti(rect.left + rect.width / 2, rect.top + rect.height / 2, 28);
+
+                    if (poppedCount === 6) {
+                        document.getElementById('balloonInstruction').innerHTML = `<span class="font-semibold text-[#9E4758]">🎉 All 6 blessings unlocked for Ibtisam Sheikh! 🎉</span>`;
+                        toStep6Btn.classList.remove('hidden');
+                        toStep6Btn.classList.add('inline-flex');
+                        launchConfetti(canvas.width / 2, canvas.height * 0.45, 80);
+                    }
+                });
+            });
+
+            toStep6Btn.addEventListener('click', () => {
+                playSparkleChime();
+                goToStep(6);
+            });
+
+            /* ---------------------------------------------------------
+               STEP 6: WAX-SEALED ROYAL LETTER FROM AWAIS AZAM
+            --------------------------------------------------------- */
+            const closedEnvelope = document.getElementById('closedEnvelope');
+            const openedLetter = document.getElementById('openedLetter');
+            const envelopePrompt = document.getElementById('envelopePrompt');
+            const toStep7Btn = document.getElementById('toStep7Btn');
+            let isEnvelopeOpened = false;
+
+            closedEnvelope.addEventListener('click', () => {
+                if (isEnvelopeOpened) return;
+                isEnvelopeOpened = true;
+                playSparkleChime();
+                launchConfetti(canvas.width / 2, canvas.height * 0.4, 65);
+
+                closedEnvelope.classList.add('hidden');
+                openedLetter.classList.remove('hidden');
+                envelopePrompt.textContent = 'A heartfelt birthday letter from your best friend Awais Azam ✨';
+
+                toStep7Btn.classList.remove('hidden');
+                toStep7Btn.classList.add('inline-flex');
+            });
+
+            toStep7Btn.addEventListener('click', () => {
+                playSparkleChime();
+                goToStep(7);
+            });
+
+            /* ---------------------------------------------------------
+               STEP 7: GRAND FINALE FIREWORKS (NO REPLAY)
+            --------------------------------------------------------- */
+            document.getElementById('moreFireworksBtn').addEventListener('click', () => {
+                playSparkleChime();
+                launchConfetti(canvas.width * 0.25, canvas.height * 0.35, 70);
+                setTimeout(() => launchConfetti(canvas.width * 0.75, canvas.height * 0.35, 70), 200);
+            });
+        });
+    </script>
+</body>
+</html>
